@@ -3,12 +3,17 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 
+import { FirstModuleModule } from './first-module/first-module.module';
+import { HomepageComponent } from './homepage/homepage.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomepageComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FirstModuleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
